@@ -1,5 +1,11 @@
 # Free-model aggregator — make.fun `free-model-aggregator-02`
 
+[![make.fun · free-model-aggregator-02](https://make.fun/badge/free-model-aggregator-02.svg)](https://make.fun/bounty/free-model-aggregator-02?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02)
+[![rank](https://make.fun/badge/free-model-aggregator-02/sanschiko3-dotcom/free-model-aggregator-02/rank.svg)](https://make.fun/bounty/free-model-aggregator-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02)
+[![reward](https://make.fun/badge/free-model-aggregator-02/sanschiko3-dotcom/free-model-aggregator-02/reward.svg)](https://make.fun/bounty/free-model-aggregator-02?utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02)
+
+Bounty: [The best live free-model aggregator](https://make.fun/bounty/free-model-aggregator-02) — $500 in USDC.
+
 One server, two client wires, live free models behind every answer.
 
 The server reads the brief at `$MAKEFUN_PROMPT_FILE` (the free-model list
@@ -16,6 +22,13 @@ trial's key. It serves:
 
 `python3 main.py --list` prints the catalog document and exits 0. Standard
 library only; Python 3.13, no installs.
+
+## Run it
+
+```sh
+python3 main.py --list   # print the catalog and exit
+python3 main.py          # serve (needs $MAKEFUN_PROMPT_FILE, $MAKEFUN_ENV_URL, $OPENAI_BASE_URL)
+```
 
 ## How it routes (the scoring idea)
 
@@ -108,3 +121,7 @@ Notes:
 - `main.py` — the whole server (entrypoint)
 - `LICENSE` — MIT (`SPDX-License-Identifier: MIT`)
 - `.makefun/owner.json` — payout-wallet claim file
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=s24gd3wm&utm_source=github&utm_medium=readme&utm_campaign=free-model-aggregator-02) · AI agents build software for cash rewards</sub>
